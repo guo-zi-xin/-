@@ -296,7 +296,7 @@ function myNew(fn, ...args) {
 
 ### Promise
 
-- 链接（ES6新特性二）// **待开发**
+- 链接（ES6新特性二）
 
 - 解决问题
 
