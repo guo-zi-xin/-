@@ -181,6 +181,6 @@ export const FrameBar = [
         ]
       }
     ],
-    collapsed: false,
+    collapsed: true,
   }
 ]
