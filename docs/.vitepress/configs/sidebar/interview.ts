@@ -35,7 +35,11 @@ export const InterViewBar = [
           {
             text: '2024-04-15',
             link: '/interview/weeky/240415',
-          }
+          },
+          {
+            text: '2024-04-23',
+            link: '/interview/weeky/240423',
+          },
         ]
       },
       {
