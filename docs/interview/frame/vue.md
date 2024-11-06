@@ -308,6 +308,7 @@ const message = ref<string>('hello world')
 </script>
 
 <template>
+
   <p>{{message}}</p>
 </template>
 ```
