@@ -10,7 +10,7 @@ export const head: HeadConfig[] = [
   ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
   ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
   ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
-  ['meta', { name: 'msapplication-TileImage', content: '/favicon.ico' }],
-  ['link', { rel: 'stylesheet', href: '/styles/index.scss' }],
+  ['meta', { name: 'msapplication-TileImage', content: '/web-docs/favicon.ico' }],
+  ['link', { rel: 'stylesheet', href: '/web-docs/styles/index.scss' }],
   ['link', { rel: 'apple-touch-icon', sizes: '60x60', href: '/blog-logo.png' }],
 ]

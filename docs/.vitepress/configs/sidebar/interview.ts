@@ -4,7 +4,7 @@ export const InterViewBar = [
     items: [
       // {
       //   text: 'weekly',
-      //   link: '/interview/weeky',
+      //   link: '/interview/weekly',
       //   items: [
       //     {
       //       text: '2024-03-05',
@@ -14,32 +14,36 @@ export const InterViewBar = [
       // },
       {
         text: 'weekly',
-        link: '/interview/weeky',
+        link: '/interview/weekly',
         items: [
           {
             text: '2024-03-20',
-            link: '/interview/weeky/240320',
+            link: '/interview/weekly/240320',
           },
           {
             text: '2024-03-25',
-            link: '/interview/weeky/240325',
+            link: '/interview/weekly/240325',
           },
           {
             text: '2024-03-28',
-            link: '/interview/weeky/240328',
+            link: '/interview/weekly/240328',
           },
           {
             text: '2024-04-07',
-            link: '/interview/weeky/240407',
+            link: '/interview/weekly/240407',
           },
           {
             text: '2024-04-15',
-            link: '/interview/weeky/240415',
+            link: '/interview/weekly/240415',
           },
           {
             text: '2024-04-23',
-            link: '/interview/weeky/240423',
+            link: '/interview/weekly/240423',
           },
+          {
+            text: '2024-11-11',
+            link: '/interview/weekly/241111'
+          }
         ]
       },
       {
