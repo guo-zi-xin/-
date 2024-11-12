@@ -17,6 +17,7 @@ import {
   FrameBar,
   InterViewBar,
 } from './configs'
+
 const links: { url: string; lastmod: PageData['lastUpdated'] }[] = []
 
 export default defineConfig({
