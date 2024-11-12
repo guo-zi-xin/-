@@ -6,7 +6,7 @@ export function MarkdownTransform(): Plugin {
   return {
     name: 'web-docs-transform',
     enforce: 'pre',
-    async transform(code, id) {
+    async transform(code:string, id:string) {
       if (!id.match(/\.md\b/))
         return null
       // convert links to relative
