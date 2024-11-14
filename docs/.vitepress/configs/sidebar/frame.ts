@@ -58,6 +58,10 @@ export const FrameBar = [
         text:'高阶函数',
         link: '/frame/react/高阶函数'
       },
+      {
+        text: 'useReducer',
+        link: '/frame/react/useReducer'
+      }
     ],
     collapsed: false,
   },
