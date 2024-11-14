@@ -10,6 +10,7 @@ const liList: Array<number> = [...Array(10).keys()]
   </div>
 </template>
 <style lang="scss" scoped>
+@use 'sass:math';
 $number-of-items: 10;
 
 .box {
@@ -43,10 +44,10 @@ $number-of-items: 10;
 
     &:nth-child(#{$index}) {
       // 设置每个子元素的样式
-      left: random(100) + 1%;
-      width: random(20) + 20px;
-      height: random(20) + 20px;
-      bottom: - (random(20) + 20px);
+      left: math.random(100) + 1%;
+      width: math.random(20) + 20px;
+      height: math.random(20) + 20px;
+      bottom: - (math.random(20) + 20px);
       animation-delay: $i * 1s;
     }
   }

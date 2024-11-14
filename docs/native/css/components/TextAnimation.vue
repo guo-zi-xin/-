@@ -12,6 +12,7 @@ const itemList: string[] = [...Array(32).keys()].map((item: number) => String(it
 
 <style lang="scss" scoped>
 @use "sass:string";
+@use 'sass:math';
 
 $str: 'QWERTYUIOPASDFGHJKLZXCVBNMabcdefghigklmnopqrstuvwxyz123456789';
 $length: str-length($str);
@@ -19,7 +20,7 @@ $size: 16;
 $count: 41;
 
 @function randomNum($max, $min: 0, $u: 1) {
-  @return ($min + random($max)) * $u;
+  @return ($min + math.random($max)) * $u;
 }
 
 @function randomLinear($count) {
@@ -37,7 +38,7 @@ $count: 41;
 }
 
 @function randomChar() {
-  $r: random($length);
+  $r: math.random($length);
   @return str-slice($str, $r, $r);
 }
 

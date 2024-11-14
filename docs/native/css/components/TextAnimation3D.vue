@@ -15,13 +15,15 @@ const panelList: string[] = [...Array(6).keys()].map((item: number) => String(it
 </script>
 
 <style lang="scss" scoped>
+@use 'sass:string';  // 导入 string 模块
+@use 'sass:math';
 $str: '◁▣▤▥▦▧♂♀♥☻►◄▧▨♦！@~￥%…&*（）—+【】「」《》，。？、QWERTYUIOPASDFGHJKLZXCVBNMabcdefghigklmnopqrstuvwxyz123456789';
 $length: str-length($str);
 $size: 16;
 $count: 41;
 
 @function randomNum($max, $min: 0, $u: 1) {
-    @return ($min + random($max)) * $u;
+    @return ($min + math.random($max)) * $u;
 }
 
 @function randomLinear() {    
@@ -54,7 +56,7 @@ $count: 41;
 }
 
 @function randomChar() {
-    $r: random($length);
+    $r: math.random($length);
     @return str-slice($str, $r, $r);
 }
 

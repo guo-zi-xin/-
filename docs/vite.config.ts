@@ -22,6 +22,21 @@ const require = createRequire(import.meta.url)
 
 export default defineConfig(async () => {
   return <UserConfig>{
+    build: {
+      chunkSizeWarningLimit: 1000,
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            // 将 node_modules 中的内容拆分到不同的 chunk
+            if (id.includes('node_modules')) {
+              if (id.includes('react')) return 'react-vendor';
+              if (id.includes('vue')) return 'vue-vendor';
+              return 'vendor';
+            }
+          },
+        },
+      },
+    },
     server: {
       hmr: {
         overlay: false,
@@ -33,7 +48,6 @@ export default defineConfig(async () => {
       },
     },
     plugins: [
-      
       // custom
       MarkdownTransform(),
       // plugins
