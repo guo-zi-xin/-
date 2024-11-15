@@ -61,6 +61,10 @@ export const FrameBar = [
       {
         text: 'useReducer',
         link: '/frame/react/useReducer'
+      },
+      {
+        text: 'useEffect与useLayoutEffect',
+        link: '/frame/react/useEffect和useLayoutEffect的区别'
       }
     ],
     collapsed: false,
