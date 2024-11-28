@@ -9,6 +9,7 @@ import Components from 'unplugin-vue-components/vite'
 import { SearchPlugin } from "vitepress-plugin-search";
 import flexSearchIndexOptions from "flexsearch";
 import { MarkdownTransform } from './.vitepress/plugins/markdownTransform'
+import AppInfo from './.vitepress/plugins/app-info'
 
 const options = {
   ...flexSearchIndexOptions,
@@ -38,6 +39,8 @@ export default defineConfig(async () => {
       },
     },
     server: {
+      // 端口号
+      port: 3001,
       hmr: {
         overlay: false,
       },
@@ -48,6 +51,7 @@ export default defineConfig(async () => {
       },
     },
     plugins: [
+      AppInfo(),
       // custom
       MarkdownTransform(),
       // plugins
@@ -69,6 +73,7 @@ export default defineConfig(async () => {
         defaultStyle: 'display: inline-block',
       }),
       UnoCSS(),
+      
     ],
     css: {
       postcss: {
