@@ -10,6 +10,8 @@ declare module 'vue' {
     'Bi:fileEarmarkWordFill': typeof import('~icons/bi/file-earmark-word-fill')['default']
     'Bi:github': typeof import('~icons/bi/github')['default']
     CustomLink: typeof import('./theme/components/CustomLink.vue')['default']
+    'Devicon:java': typeof import('~icons/devicon/java')['default']
+    'Devicon:nodejsWordmark': typeof import('~icons/devicon/nodejs-wordmark')['default']
     'EosIcons:modifiedDate': typeof import('~icons/eos-icons/modified-date')['default']
     'Fe:youtube': typeof import('~icons/fe/youtube')['default']
     'IconPark:addWeb': typeof import('~icons/icon-park/add-web')['default']

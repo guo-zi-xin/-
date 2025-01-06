@@ -46,7 +46,7 @@ importers:
         specifier: ^1.11.10
         version: 1.11.13
       flexsearch:
-        specifier: ^0.7.31
+        specifier: ^0.7.43
         version: 0.7.43
       globby:
         specifier: ^13.2.2

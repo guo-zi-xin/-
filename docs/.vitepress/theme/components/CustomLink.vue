@@ -45,7 +45,11 @@ const hrefSource = computed(() => {
   else if (/bun/.test(lowerHref))
     return 'bun'
   else if (/momentjs/.test(lowerHref))
-  return 'momentjs'
+    return 'momentjs'
+  else if (/nodejs/.test(lowerHref))
+    return 'node'
+  else if (/java/.test(lowerHref))
+    return 'java'
   else return 'web'
 })
 
@@ -93,6 +97,8 @@ const component = computed(() => {
               <vscode-icons:file-type-bun v-if="hrefSource === 'bun'" class="w-7 h-7" />
               <icon-park:add-web v-if="hrefSource === 'web'" class="w-7 h-7" />
               <logos:momentjs v-if="hrefSource === 'momentjs'" class="w-7 h-7"/>
+              <devicon:nodejs-wordmark v-if="hrefSource === 'node'" class="w-7 h-7"/>
+              <devicon:java v-if="hrefSource === 'java'" class="w-7 h-7"/>
               <span class="text-ellipsis w-full whitespace-nowrap overflow-hidden text-sm opacity-75 font-500">
                 {{ href }}
               </span>

@@ -98,4 +98,14 @@ export const NativeBar = [
     ],
     collapsed: false,
   },
+  /* UniApp */
+  {
+    text: 'UniApp相关',
+    items: [
+      {
+        text: 'UniApp打包流程',
+        link: '/native/uniapp/uniapp打包流程'
+      }
+    ]
+  }
 ];
