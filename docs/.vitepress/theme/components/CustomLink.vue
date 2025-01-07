@@ -50,6 +50,10 @@ const hrefSource = computed(() => {
     return 'node'
   else if (/java/.test(lowerHref))
     return 'java'
+  else if (/uniapp/.test(lowerHref) || /uniCloud/.test(lowerHref) || /dcloud.net/.test(lowerHref))
+    return 'uni'
+  else if (/csdn|CSDN/.test(lowerHref))
+    return 'csdn'
   else return 'web'
 })
 
@@ -99,6 +103,8 @@ const component = computed(() => {
               <logos:momentjs v-if="hrefSource === 'momentjs'" class="w-7 h-7"/>
               <devicon:nodejs-wordmark v-if="hrefSource === 'node'" class="w-7 h-7"/>
               <devicon:java v-if="hrefSource === 'java'" class="w-7 h-7"/>
+              <emojione-monotone:letter-u v-if="hrefSource === 'uni'" class="w-7 h-7"/>
+              <simple-icons:csdn v-if="hrefSource === 'csdn'" class="w-7 h-7"/>
               <span class="text-ellipsis w-full whitespace-nowrap overflow-hidden text-sm opacity-75 font-500">
                 {{ href }}
               </span>
